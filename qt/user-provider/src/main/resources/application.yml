@@ -1,0 +1,17 @@
+server:
+  port: 1002
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis #你学习mybatis时，使用的数据库地址
+    username: root
+    password: 123
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: user-provider
+mybatis:
+  type-aliases-package: com.xc.pojo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10088/eureka

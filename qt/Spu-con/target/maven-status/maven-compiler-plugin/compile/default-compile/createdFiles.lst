@@ -1,0 +1,15 @@
+com\xc\pojo\SpuAttrKey.class
+com\xc\pojo\SpuAttrValue.class
+com\xc\pojo\SkuSpuAttr.class
+com\xc\pojo\Vo.class
+com\xc\controller\SpuController.class
+com\xc\pojo\Brand.class
+com\xc\pojo\Menu.class
+com\xc\pojo\Sku.class
+com\xc\service\SpuService.class
+com\xc\pojo\SpuAttrValueSpus.class
+com\xc\pojo\Spu.class
+com\xc\pojo\Category.class
+com\xc\SpuConApp.class
+com\xc\pojo\Vo2.class
+com\xc\pojo\KeyValue.class

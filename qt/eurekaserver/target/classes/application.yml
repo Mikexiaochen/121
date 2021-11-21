@@ -1,0 +1,15 @@
+server:
+  port: 10088 #端口
+spring:
+  application:
+    name: eureka-server # 应用名称，会在Eureka中显示
+eureka:
+  client:
+    service-url:  #EurekaServer的地址，现在是自己的地址，如果是集群需加上其他地址
+      defaultZone: http://127.0.0.1:10088/eureka
+    server:
+      enable-self-preservation: false #自我保护机制关闭
+        #是否将自己注册到Eureka Server上，默认为true
+    register-with-eureka: false
+        #是否从Eureka Server上获取注册信息，默认为true
+    fetch-registry: false

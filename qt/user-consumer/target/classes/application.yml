@@ -1,0 +1,19 @@
+server:
+  port: 1003
+spring:
+  application:
+    name: user-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10088/eureka
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000 #设置Hystrix的超时时间(ms)，这个不会自动提醒，得手打
+feign:
+  hystrix:
+    enabled: true #开启feign熔断功能

@@ -1,0 +1,3 @@
+com\xc\ZuulApp.class
+com\xc\filter\LoginFilter.class
+com\xc\utils\TokenUtil.class

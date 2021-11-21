@@ -1,0 +1,17 @@
+server:
+  port: 10001 #服务端口
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5 #获取服务列表的周期 5s
+    service-url:
+      defaultZone: http://127.0.0.1:10088/eureka
+zuul:
+  routes:
+    user-provider: /user-provider/** #指定服务名，这个服务名随便写，但是一般起名就和服务名一直，好便是
+    user-consumer: /user-consumer/**
+    spu-provider: /spu-provider/** #指定服务名,这个服务名随便写，但是一般呢起名就和服务名一样，好辨识
+    spu-consumer: /spu-consumer/**
+  prefix: /api  # 前缀
